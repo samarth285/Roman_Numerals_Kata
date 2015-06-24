@@ -54,4 +54,95 @@ public class romanNumeralsTests {
 	{
 		assertEquals("X", romanNumerals.findMyRomanNumeral(10));
 	}
+	
+	@Test
+	public void whenValueIsEleven()
+	{
+		assertEquals("XI", romanNumerals.findMyRomanNumeral(11));
+	}
+	
+	@Test
+	public void whenValueIsTwenty()
+	{
+		assertEquals("XX", romanNumerals.findMyRomanNumeral(20));
+	}
+	
+	@Test
+	public void whenValueIsFifty()
+	{
+		assertEquals("L", romanNumerals.findMyRomanNumeral(50));
+	}
+	
+	@Test
+	public void whenValueIsSixty()
+	{
+		assertEquals("LX", romanNumerals.findMyRomanNumeral(60));
+	}
+	
+	@Test
+	public void whenValueIsSeventy()
+	{
+		assertEquals("LXX", romanNumerals.findMyRomanNumeral(70));
+	}
+	
+	@Test
+	public void whenValueIsHundred()
+	{
+		assertEquals("C", romanNumerals.findMyRomanNumeral(100));
+	}
+	
+	@Test
+	public void whenValueIsHundredTen()
+	{
+		assertEquals("CX", romanNumerals.findMyRomanNumeral(110));
+	}
+	
+	@Test
+	public void whenValueIsOneFifty()
+	{
+		assertEquals("CL", romanNumerals.findMyRomanNumeral(150));
+	}
+	
+	@Test
+	public void whenValueIsTwoHundred()
+	{
+		assertEquals("CC", romanNumerals.findMyRomanNumeral(200));
+	}
+	
+	@Test
+	public void whenValueIsTwoFifty()
+	{
+		assertEquals("CCL", romanNumerals.findMyRomanNumeral(250));
+	}
+	
+	@Test
+	public void whenValueIsThreeHundred()
+	{
+		assertEquals("CCC", romanNumerals.findMyRomanNumeral(300));
+	}
+	
+	@Test
+	public void whenValueIsFiveHundred()
+	{
+		assertEquals("D", romanNumerals.findMyRomanNumeral(500));
+	}
+	
+	@Test
+	public void whenValueIsSixHundred()
+	{
+		assertEquals("DC", romanNumerals.findMyRomanNumeral(600));
+	}
+	
+	@Test
+	public void whenValueIsSevenHundred()
+	{
+		assertEquals("DCC", romanNumerals.findMyRomanNumeral(700));
+	}
+	
+	@Test
+	public void whenValueIsThousand()
+	{
+		assertEquals("M", romanNumerals.findMyRomanNumeral(1000));
+	}
+	
 }
