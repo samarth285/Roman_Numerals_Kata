@@ -1,11 +1,9 @@
 package main;
 
-import java.util.ArrayList;
-
 public class romanNumerals {
 	
-	private static int myNum[] = {1, 5, 10, 50, 100, 500, 1000};
-	private static String myRoman[] = {"I", "V", "X", "L", "C", "D", "M"};
+	private static int myNum[] = {1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000};
+	private static String myRoman[] = {"I", "IV", "V", "IX", "X", "XL", "L", "XC", "C", "CD", "D", "CM", "M"};
 
 	public static String findMyRomanNumeral(int num)
 	{

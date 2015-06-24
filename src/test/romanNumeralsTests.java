@@ -145,4 +145,88 @@ public class romanNumeralsTests {
 		assertEquals("M", romanNumerals.findMyRomanNumeral(1000));
 	}
 	
+	@Test
+	public void whenValueIsFour()
+	{
+		assertEquals("IV", romanNumerals.findMyRomanNumeral(4));
+	}
+	
+	@Test
+	public void whenValueIsNine()
+	{
+		assertEquals("IX", romanNumerals.findMyRomanNumeral(9));
+	}
+	
+	@Test
+	public void whenValueIsTwentyNine()
+	{
+		assertEquals("XXIX", romanNumerals.findMyRomanNumeral(29));
+	}
+	
+	@Test
+	public void whenValueIsForty()
+	{
+		assertEquals("XL", romanNumerals.findMyRomanNumeral(40));
+	}
+	
+	@Test
+	public void whenValueIsFortyFour()
+	{
+		assertEquals("XLIV", romanNumerals.findMyRomanNumeral(44));
+	}
+	
+	@Test
+	public void whenValueIsNinetyNine()
+	{
+		assertEquals("XCIX", romanNumerals.findMyRomanNumeral(99));
+	}
+	
+	@Test
+	public void whenValueIsHundredFortyFour()
+	{
+		assertEquals("CXLIV", romanNumerals.findMyRomanNumeral(144));
+	}
+	
+	@Test
+	public void whenValueIsTwoHundredNinetyNine()
+	{
+		assertEquals("CCXCIX", romanNumerals.findMyRomanNumeral(299));
+	}
+	
+	@Test
+	public void whenValueIsFourHundred()
+	{
+		assertEquals("CD", romanNumerals.findMyRomanNumeral(400));
+	}
+	
+	@Test
+	public void whenValueIsFourHundredFortyNine()
+	{
+		assertEquals("CDXLIX", romanNumerals.findMyRomanNumeral(449));
+	}
+	
+	@Test
+	public void whenValueIsSixHundredFiftyFour()
+	{
+		assertEquals("DCLIV", romanNumerals.findMyRomanNumeral(654));
+	}
+	
+	@Test
+	public void whenValueIsNineHundred()
+	{
+		assertEquals("CM", romanNumerals.findMyRomanNumeral(900));
+	}
+	
+	@Test
+	public void whenValueIsNineHundredFortyFour()
+	{
+		assertEquals("CMXLIV", romanNumerals.findMyRomanNumeral(944));
+	}
+	
+	@Test
+	public void whenValueIsNineHundredNinetyNine()
+	{
+		assertEquals("CMXCIX", romanNumerals.findMyRomanNumeral(999));
+	}
+	
 }
