@@ -1,22 +1,31 @@
 package main;
 
+import java.util.TreeMap;
+
 public class romanNumerals {
 	
-	private static int myNum[] = {1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000};
-	private static String myRoman[] = {"I", "IV", "V", "IX", "X", "XL", "L", "XC", "C", "CD", "D", "CM", "M"};
-
+	private final static TreeMap<Integer, String> myMap = new TreeMap<Integer, String>();
+	 
+	static
+	{
+		myMap.put(1, "I");
+	}
+	
+	private static int getKeyLessThanNumber(int number)
+	{
+		return myMap.floorKey(number);
+	}
+	
 	public static String findMyRomanNumeral(int num)
 	{
 		String romanMemory = "";
 		
-		for(int i=(myNum.length-1); i >= 0; i--)
-			for(; (num >= myNum[i]); num -= myNum[i])
-				romanMemory += myRoman[i];
+		for(int iterator = num; iterator >= getKeyLessThanNumber(num); iterator-= getKeyLessThanNumber(num))
+		{
+			romanMemory += myMap.get(getKeyLessThanNumber(num));
+		}
 		
 		return romanMemory;
-		
 	}
-
-	
 	
 }
